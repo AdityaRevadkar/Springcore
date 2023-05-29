@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.w3.org/Schema/context"
+   xmlns:p="http://www.w3.org/Schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+ 
+ <bean class="com.springcore.ref.B" name="b_ref">
+ <property name="no" value="7499626980"  />
+ </bean>
+ 
+ 
+ <bean class="com.springcore.ref.A" name="a_ref"> 
+ <property name="name" value="aditya" />
+ <property name="b">
+ <ref bean ="b_ref"/>
+ </property>
+ 
+ 
+ 
+ 
+ 
+ </bean>
+ 
+ 
+ 
+ 
+ 
+ 
+
+</beans>
